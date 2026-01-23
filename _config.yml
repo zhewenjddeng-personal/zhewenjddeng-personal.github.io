@@ -26,11 +26,11 @@ author:
   avatar           : "profile.png"
   name             : "Zhewen JD Deng"
   pronouns         : # example: "she/her"  
-  bio              : ""PhD Candidate in Chemical. Engineering<br>University of California, San Diego""
+  bio              : ""PhD Candidate in Chemical. Engineering University of California, San Diego""
   location         : "La Jolla"
   employer         : #"Red Brick University"
   uri              : # URL
-  email            : "z8deng@ucsd.edu" 
+  email            : "z8deng[at]ucsd[dot]edu" 
 
   # Academic websites
   academia         : # URL
