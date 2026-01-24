@@ -50,9 +50,10 @@
   border-bottom: none !important;
 }
 
-/* Make the publication description font size match the citation and venue */
+/* Make the publication description font size 1em and light gray */
 .archive__item-excerpt {
   font-size: 1em !important;
+  color: #7a7a7a !important; /* This is a standard light-medium gray */
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
