@@ -17,13 +17,7 @@
 
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
-        <img src=
-          {% if teaser contains "://" %}
-            "{{ teaser }}"
-          {% else %}
-            "{{ teaser | prepend: "/images/" | prepend: base_path }}"
-          {% endif %}
-          alt="">
+        <img src="{% if teaser contains "://" %}{{ teaser }}{% else %}{{ teaser | prepend: "/images/" | prepend: base_path }}{% endif %}" alt="">
       </div>
     {% endif %}
 
@@ -31,46 +25,35 @@
     <h2 class="archive__item-title" itemprop="headline">
       {% if post.link %}
         <a href="{{ post.link }}">{{ title }}</a> 
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink">
-          <i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span>
-        </a>
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
 
-    <!-- Venue / Year -->
-    {% if post.collection == 'teaching' %}
-      <p>{{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
-    {% elsif post.collection == 'publications' %}
-      <p><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
+    <!-- Citation above Venue/Year -->
+    {% if post.citation %}
+      <p class="archive__item-citation">{{ post.citation }}</p>
     {% endif %}
 
-    <!-- Citation + Links -->
-    {% if post.citation %}
-      <p>
-        {{ post.citation }}<br>
-        {% if post.paperurl %}<a href="{{ post.paperurl }}">Paper</a>{% endif %}
-        {% if post.codeurl %} | <a href="{{ post.codeurl }}">Code</a>{% endif %}
-        {% if post.hardwareurl %} | <a href="{{ post.hardwareurl }}">Hardware</a>{% endif %}
-        {% if post.slidesurl %} | <a href="{{ post.slidesurl }}">Slide</a>{% endif %}
-        {% if post.bibtexurl %} | <a href="{{ post.bibtexurl }}">Bib</a>{% endif %}
-      </p>
-    {% else %}
-      <p>
-        {% if post.paperurl %}<a href="{{ post.paperurl }}">PDF</a>{% endif %}
-        {% if post.codeurl %} | <a href="{{ post.codeurl }}">Code</a>{% endif %}
-        {% if post.hardwareurl %} | <a href="{{ post.hardwareurl }}">Hardware</a>{% endif %}
-        {% if post.slidesurl %} | <a href="{{ post.slidesurl }}">Slide</a>{% endif %}
-        {% if post.bibtexurl %} | <a href="{{ post.bibtexurl }}">Bib</a>{% endif %}
-      </p>
+    {% if post.collection == 'publications' %}
+      <p class="archive__item-venue"><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
+    {% elsif post.collection == 'teaching' %}
+      <p>{{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
     {% endif %}
+
+    <!-- Links: PDF | Code | Hardware | Slide | Bib -->
+    <p class="archive__item-links">
+      {% if post.paperurl %}<a href="{{ post.paperurl }}">PDF</a>{% endif %}
+      {% if post.codeurl %} | <a href="{{ post.codeurl }}">Code</a>{% endif %}
+      {% if post.hardwareurl %} | <a href="{{ post.hardwareurl }}">Hardware</a>{% endif %}
+      {% if post.slidesurl %} | <a href="{{ post.slidesurl }}">Slide</a>{% endif %}
+      {% if post.bibtexurl %} | <a href="{{ post.bibtexurl }}">Bib</a>{% endif %}
+    </p>
 
     <!-- Excerpt -->
     {% if post.excerpt %}
-      <p class="archive__item-excerpt" itemprop="description">
-        {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
-      </p>
+      <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
     {% endif %}
 
   </article>
