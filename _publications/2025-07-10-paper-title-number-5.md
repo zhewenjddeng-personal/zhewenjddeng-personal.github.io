@@ -10,4 +10,4 @@ venue: 'RSC Sustainable Energy and Fuels'
 paperurl: 'https://academicpages.github.io/files/paper3.pdf'
 ---
 
-Using [MathJax](https://www.mathjax.org/) in the description is supported - $$E=mc^2$$ - however, the use must be mindful that the default delimiters are `$$...$$` and `\\[...\\]` which differs from the `$...$` that is typically expected.
+PARASOL enables testing of photovoltaic cells and modules outdoors or indoors and is compliant with standardized ISOS-L and ISOS-O tests. The system provides control and flexibility over hardware and software algorithms for further user customization.
