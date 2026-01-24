@@ -13,49 +13,54 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork" style="display: flex; align-items: flex-start; margin-bottom: 2em;">
 
-    {% if include.type == "grid" and teaser %}
-      <div class="archive__item-teaser">
-        <img src="{% if teaser contains "://" %}{{ teaser }}{% else %}{{ teaser | prepend: "/images/" | prepend: base_path }}{% endif %}" alt="">
-      </div>
-    {% endif %}
-
-    <h2 class="archive__item-title" itemprop="headline">
-      {% if post.collection == 'publications' %}
-        {{ title }}
+    <div class="archive__item-teaser" style="flex: 0 0 200px; margin-right: 20px;">
+      {% if teaser %}
+        <img src="{% if teaser contains '://' %}{{ teaser }}{% else %}{{ teaser | prepend: '/images/' | prepend: base_path }}{% endif %}" 
+             alt="{{ title }}" 
+             style="width: 100%; border-radius: 4px; border: 1px solid #eee;">
       {% else %}
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+        <div style="width: 100%; height: 120px; background: #f9f9f9; border: 1px dashed #ccc;"></div>
       {% endif %}
-    </h2>
+    </div>
 
-    {% if post.citation %}
-      <p class="archive__item-citation" style="margin-bottom: 0.25em;">
-        {{ post.citation | markdownify | remove: '<p>' | remove: '</p>' }}
-      </p>
-    {% endif %}
+    <div class="archive__item-content" style="flex: 1;">
+      
+      <h2 class="archive__item-title" itemprop="headline" style="margin-top: 0;">
+        {% if post.collection == 'publications' %}
+          {{ title }}
+        {% else %}
+          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+        {% endif %}
+      </h2>
 
-    <p class="archive__item-details" style="margin-top: 0; margin-bottom: 0.5em;">
-      {% if post.collection == 'publications' %}
-        <i style="margin-right: 15px;">{{ post.venue }}, {{ post.date | default: "1900-01-01" | date: "%Y" }}</i>
-      {% elsif post.collection == 'teaching' %}
-        <span style="margin-right: 15px;">{{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</span>
+      {% if post.citation %}
+        <p class="archive__item-citation" style="margin-bottom: 0.25em;">
+          {{ post.citation | markdownify | remove: '<p>' | remove: '</p>' }}
+        </p>
       {% endif %}
 
-      <span class="archive__item-links">
-        {% if post.paperurl %}<a href="{{ post.paperurl }}">PDF</a>{% endif %}
-        {% if post.codeurl %} | <a href="{{ post.codeurl }}">Code</a>{% endif %}
-        {% if post.hardwareurl %} | <a href="{{ post.hardwareurl }}">Hardware</a>{% endif %}
-        {% if post.slidesurl %} | <a href="{{ post.slidesurl }}">Slide</a>{% endif %}
-        {% if post.bibtexurl %} | <a href="{{ post.bibtexurl }}">Bib</a>{% endif %}
-      </span>
-    </p>
+      <p class="archive__item-details" style="margin-top: 0; margin-bottom: 0.5em;">
+        {% if post.collection == 'publications' %}
+          <i style="margin-right: 15px;">{{ post.venue }}, {{ post.date | default: "1900-01-01" | date: "%Y" }}</i>
+        {% endif %}
 
-    {% if post.excerpt %}
-      <p class="archive__item-excerpt" itemprop="description">
-        {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
+        <span class="archive__item-links">
+          {% if post.paperurl %}<a href="{{ post.paperurl }}">PDF</a>{% endif %}
+          {% if post.codeurl %} | <a href="{{ post.codeurl }}">Code</a>{% endif %}
+          {% if post.hardwareurl %} | <a href="{{ post.hardwareurl }}">Hardware</a>{% endif %}
+          {% if post.slidesurl %} | <a href="{{ post.slidesurl }}">Slide</a>{% endif %}
+          {% if post.bibtexurl %} | <a href="{{ post.bibtexurl }}">Bib</a>{% endif %}
+        </span>
       </p>
-    {% endif %}
 
+      {% if post.excerpt %}
+        <p class="archive__item-excerpt" itemprop="description" style="color: #7a7a7a; font-size: 1em; margin-top: 0.5em;">
+          {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
+        </p>
+      {% endif %}
+
+    </div>
   </article>
 </div>
