@@ -1,5 +1,7 @@
 ---
 title: "PARASOL: an open-source platform for parallel testing of solar modules"
+header:
+  teaser: "TocRoundCorner.svg"  
 citation: 'Sean P. Dunfield*, <b>Zhewen J.D. Deng*</b>, Ken Kaushal, Deniz N. Cakan, Jack R. Palmer, Rishi E. Kumar, Clark Han, Colin Zyskowskic and David P. Fenning'
 collection: publications
 category: manuscripts
