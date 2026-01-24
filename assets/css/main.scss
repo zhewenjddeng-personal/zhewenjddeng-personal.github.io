@@ -53,3 +53,10 @@
   text-decoration: none !important;
   border-bottom: none !important;
 }
+
+/* Make the publication description font size match the citation and venue */
+.archive__item-excerpt {
+  font-size: 1em; 
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
