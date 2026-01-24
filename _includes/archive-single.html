@@ -15,14 +15,14 @@
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork" style="display: flex; align-items: stretch; margin-bottom: 2.5em;">
 
-    <div class="archive__item-teaser" style="flex: 0 0 150px; margin-right: 25px;">
+    <div class="archive__item-teaser" style="flex: 0 0 150px; margin-right: 25px; background-color: #fcfcfc; border: 1px solid #eee; border-radius: 4px; overflow: hidden;">
       {% if teaser %}
         <img src="{% if teaser contains '://' %}{{ teaser }}{% else %}{{ teaser | prepend: '/images/' | prepend: base_path }}{% endif %}" 
              alt="{{ title }}" 
-             style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px; border: 1px solid #eee;">
+             style="width: 100%; height: 100%; object-fit: contain; padding: 10px;">
       {% else %}
-        <div style="width: 100%; height: 100%; background: #f9f9f9; border: 1px dashed #ccc; display: flex; align-items: center; justify-content: center;">
-          <span style="color: #ccc; font-size: 0.8em;">No Image</span>
+        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+          <span style="color: #ccc; font-size: 0.7em;">No Image</span>
         </div>
       {% endif %}
     </div>
@@ -37,32 +37,34 @@
         {% endif %}
       </h2>
 
-      {% if post.citation %}
-        <p class="archive__item-citation" style="margin-bottom: 0.25em; line-height: 1.4;">
-          {{ post.citation | markdownify | remove: '<p>' | remove: '</p>' }}
-        </p>
-      {% endif %}
-
-      <p class="archive__item-details" style="margin-top: 0; margin-bottom: 0.5em;">
-        {% if post.collection == 'publications' %}
-          <i style="margin-right: 15px;">{{ post.venue }}, {{ post.date | default: "1900-01-01" | date: "%Y" }}</i>
+      <div style="font-size: 0.85em;">
+        
+        {% if post.citation %}
+          <p class="archive__item-citation" style="margin-bottom: 0.25em; line-height: 1.4;">
+            {{ post.citation | markdownify | remove: '<p>' | remove: '</p>' }}
+          </p>
         {% endif %}
 
-        <span class="archive__item-links">
-          {% if post.paperurl %}<a href="{{ post.paperurl }}">PDF</a>{% endif %}
-          {% if post.codeurl %} | <a href="{{ post.codeurl }}">Code</a>{% endif %}
-          {% if post.hardwareurl %} | <a href="{{ post.hardwareurl }}">Hardware</a>{% endif %}
-          {% if post.slidesurl %} | <a href="{{ post.slidesurl }}">Slide</a>{% endif %}
-          {% if post.bibtexurl %} | <a href="{{ post.bibtexurl }}">Bib</a>{% endif %}
-        </span>
-      </p>
+        <p class="archive__item-details" style="margin-top: 0; margin-bottom: 0.5em;">
+          {% if post.collection == 'publications' %}
+            <i style="margin-right: 15px;">{{ post.venue }}, {{ post.date | default: "1900-01-01" | date: "%Y" }}</i>
+          {% endif %}
 
-      {% if post.excerpt %}
-        <p class="archive__item-excerpt" itemprop="description" style="color: #7a7a7a; font-size: 1em; margin-top: 0.25em; margin-bottom: 0; line-height: 1.5;">
-          {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
+          <span class="archive__item-links">
+            {% if post.paperurl %}<a href="{{ post.paperurl }}">PDF</a>{% endif %}
+            {% if post.codeurl %} | <a href="{{ post.codeurl }}">Code</a>{% endif %}
+            {% if post.hardwareurl %} | <a href="{{ post.hardwareurl }}">Hardware</a>{% endif %}
+            {% if post.slidesurl %} | <a href="{{ post.slidesurl }}">Slide</a>{% endif %}
+            {% if post.bibtexurl %} | <a href="{{ post.bibtexurl }}">Bib</a>{% endif %}
+          </span>
         </p>
-      {% endif %}
 
-    </div>
+        {% if post.excerpt %}
+          <p class="archive__item-excerpt" itemprop="description" style="color: #7a7a7a; margin-top: 0.25em; margin-bottom: 0; line-height: 1.5;">
+            {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
+          </p>
+        {% endif %}
+
+      </div> </div>
   </article>
 </div>
