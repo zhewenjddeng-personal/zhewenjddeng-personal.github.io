@@ -42,13 +42,9 @@
     "vendor/font-awesome/brands"
 ;
 
-/* Remove the underline/line on hover for publication titles */
-.archive__item-title:hover {
-  text-decoration: none !important;
-  border-bottom: none !important;
-}
-
-/* If the title is a link in other sections and you want those gone too */
+/* Remove underline from title even when hovering over citation/excerpt */
+.archive__item:hover .archive__item-title,
+.archive__item-title:hover,
 .archive__item-title a:hover {
   text-decoration: none !important;
   border-bottom: none !important;
