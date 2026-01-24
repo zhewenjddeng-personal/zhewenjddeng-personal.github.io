@@ -13,21 +13,23 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork" style="display: flex; align-items: flex-start; margin-bottom: 2em;">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork" style="display: flex; align-items: stretch; margin-bottom: 2.5em;">
 
-    <div class="archive__item-teaser" style="flex: 0 0 200px; margin-right: 20px;">
+    <div class="archive__item-teaser" style="flex: 0 0 150px; margin-right: 25px;">
       {% if teaser %}
         <img src="{% if teaser contains '://' %}{{ teaser }}{% else %}{{ teaser | prepend: '/images/' | prepend: base_path }}{% endif %}" 
              alt="{{ title }}" 
-             style="width: 100%; border-radius: 4px; border: 1px solid #eee;">
+             style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px; border: 1px solid #eee;">
       {% else %}
-        <div style="width: 100%; height: 120px; background: #f9f9f9; border: 1px dashed #ccc;"></div>
+        <div style="width: 100%; height: 100%; background: #f9f9f9; border: 1px dashed #ccc; display: flex; align-items: center; justify-content: center;">
+          <span style="color: #ccc; font-size: 0.8em;">No Image</span>
+        </div>
       {% endif %}
     </div>
 
-    <div class="archive__item-content" style="flex: 1;">
+    <div class="archive__item-content" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
       
-      <h2 class="archive__item-title" itemprop="headline" style="margin-top: 0;">
+      <h2 class="archive__item-title" itemprop="headline" style="margin-top: 0; margin-bottom: 0.25em;">
         {% if post.collection == 'publications' %}
           {{ title }}
         {% else %}
@@ -36,7 +38,7 @@
       </h2>
 
       {% if post.citation %}
-        <p class="archive__item-citation" style="margin-bottom: 0.25em;">
+        <p class="archive__item-citation" style="margin-bottom: 0.25em; line-height: 1.4;">
           {{ post.citation | markdownify | remove: '<p>' | remove: '</p>' }}
         </p>
       {% endif %}
@@ -56,7 +58,7 @@
       </p>
 
       {% if post.excerpt %}
-        <p class="archive__item-excerpt" itemprop="description" style="color: #7a7a7a; font-size: 1em; margin-top: 0.5em;">
+        <p class="archive__item-excerpt" itemprop="description" style="color: #7a7a7a; font-size: 1em; margin-top: 0.25em; margin-bottom: 0; line-height: 1.5;">
           {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
         </p>
       {% endif %}
