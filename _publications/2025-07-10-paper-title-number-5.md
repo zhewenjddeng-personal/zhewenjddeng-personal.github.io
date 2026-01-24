@@ -1,6 +1,6 @@
 ---
 title: "PARASOL: an open-source platform for parallel testing of solar modules"
-citation: 'Dunfield, S.P.*, Deng, Z.J.*, Kaushal, L, Cakan, D.N., Palmer, J.R., Kumar, E.R., Han, C., Zyskowski, C., Fenning., D.P.'
+citation: 'Dunfield, S.P.*, <b>Deng, Z.J.*</b>, Kaushal, L, Cakan, D.N., Palmer, J.R., Kumar, E.R., Han, C., Zyskowski, C., Fenning., D.P.'
 collection: publications
 category: manuscripts
 permalink: /publication/2024-02-17-paper-title-number-4
