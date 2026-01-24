@@ -52,6 +52,7 @@
         {{ post.citation }}<br>
         {% if post.paperurl %}<a href="{{ post.paperurl }}">Paper</a>{% endif %}
         {% if post.codeurl %} | <a href="{{ post.codeurl }}">Code</a>{% endif %}
+        {% if post.hardwareurl %} | <a href="{{ post.hardwareurl }}">Hardware</a>{% endif %}
         {% if post.slidesurl %} | <a href="{{ post.slidesurl }}">Slide</a>{% endif %}
         {% if post.bibtexurl %} | <a href="{{ post.bibtexurl }}">Bib</a>{% endif %}
       </p>
@@ -59,6 +60,7 @@
       <p>
         {% if post.paperurl %}<a href="{{ post.paperurl }}">PDF</a>{% endif %}
         {% if post.codeurl %} | <a href="{{ post.codeurl }}">Code</a>{% endif %}
+        {% if post.hardwareurl %} | <a href="{{ post.hardwareurl }}">Hardware</a>{% endif %}
         {% if post.slidesurl %} | <a href="{{ post.slidesurl }}">Slide</a>{% endif %}
         {% if post.bibtexurl %} | <a href="{{ post.bibtexurl }}">Bib</a>{% endif %}
       </p>
