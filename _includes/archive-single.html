@@ -32,13 +32,13 @@
 
     <!-- Citation above Venue/Year -->
     {% if post.citation %}
-      <p class="archive__item-citation">{{ post.citation }}</p>
-    {% endif %}
-
-    {% if post.collection == 'publications' %}
-      <p class="archive__item-venue"><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
+      <p class="archive__item-citation" style="margin-bottom: 0;">
+        {{ post.citation | markdownify | remove: '<p>' | remove: '</p>' }}, 
+        <i>{{ post.venue }}</i>, 
+        {{ post.date | default: "1900-01-01" | date: "%Y" }}
+      </p>
     {% elsif post.collection == 'teaching' %}
-      <p>{{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
+      <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
     {% endif %}
 
     <!-- Links: PDF | Code | Hardware | Slide | Bib -->
