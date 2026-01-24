@@ -17,12 +17,7 @@ Publications
 ======
 
 
-
 Projects
-======
-
-
-Skills
 ======
 
 
