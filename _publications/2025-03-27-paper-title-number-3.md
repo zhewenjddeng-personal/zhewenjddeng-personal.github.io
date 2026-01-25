@@ -2,7 +2,7 @@
 title: "Nanoscale Strain and Octahedral Tilting Removes Structural and Nonradiative Defects in 2D-Templated FAPbI3"
 header:
   teaser: "TwoDTemplate_TOC.jpeg"  
-citation: 'Connor J. Dolan, Andrew J. Torma, Siraj Sidhik, Faiz Mandani, Hao Zhang, Isaac Metcalf, Jack R. Palmer, <b>Zhewen J.D. Deng</b>, Tao Zhou, Zhonghou Cai, Martin V. Holt, Yanqi Luo, Barry Lai, Jacky Even, David P. Fenning*, Aditya D. Mohite*'
+citation: 'Connor J. Dolan, Andrew J. Torma, Siraj Sidhik, Faiz Mandani, Hao Zhang, Isaac Metcalf, Jack R. Palmer, <b>Zhewen J.D. Deng</b>, Tao Zhou, Zhonghou Cai, Martin V. Holt, Yanqi Luo, Barry Lai, Jacky Even, David P. Fenning†, Aditya D. Mohite†'
 collection: publications
 category: manuscripts
 permalink: /publication/2024-02-17-paper-title-number-4
