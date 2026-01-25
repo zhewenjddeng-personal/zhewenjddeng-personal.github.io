@@ -1,17 +1,15 @@
 ---
-title: "PARASOL: an open-source platform for parallel testing of solar modules"
+title: "Strong-bonding hole-transport layers reduce ultraviolet degradation of perovskite solar cells"
 header:
-  teaser: "TocRoundCorner.svg"  
-citation: 'Sean P. Dunfield*, <b>Zhewen J.D. Deng*</b>, Ken Kaushal, Deniz N. Cakan, Jack R. Palmer, Rishi E. Kumar, Clark Han, Colin Zyskowskic and David P. Fenning'
+  teaser: "PhosphonicAcid_TOC.png"  
+citation: 'Chengbin Fei, Anastasia Kuvayskaya, Xiaoqiang Shi, Mengru Wang, Zhifang Shi, Haoyang Jiao, Timothy J Silverman, Michael Owen-Bellini, Yifan Dong, Yeming Xian, Rebecca Scheidt, Xiaoming Wang, Guang Yang, Hangyu Gu, Nengxu Li, Connor J Dolan, <b>Zhewen JD Deng</b>, Deniz N Cakan, David P Fenning, Yanfa Yan, Matthew C Beard, Laura T Schelhas, Alan Sellinger, Jinsong Huang'
 collection: publications
 category: manuscripts
 permalink: /publication/2024-02-17-paper-title-number-4
-excerpt: 'PARASOL enables testing of photovoltaic cells and modules outdoors or indoors and is compliant with standardized ISOS-L and ISOS-O tests. The system provides control and flexibility over hardware and software algorithms for further user customization.'
-date: 2025-07-10
-venue: 'RSC SE&F'
-paperurl: 'https://pubs.rsc.org/en/Content/ArticleLanding/2025/SE/D5SE00513B'
-codeurl: 'https://github.com/fenning-research-group/parasol.git'
-hardwareurl: '/publication/2024-02-17-paper-title-number-4'
+excerpt: 'The authors designed a hole-transfer material with a phosphonic acid group bonding to indium-tin oxide and a nitrogen atom in the aromatic carbazole group bonded with lead in the perovskite. A champion perovskite minimodule retained a power conversion efficiency of more than 16% after 29 weeks of outdoor testing.'
+date: 2024-06-06
+venue: 'Science'
+paperurl: 'https://www.science.org/doi/full/10.1126/science.adi4531'
 ---
 
-PARASOL enables testing of photovoltaic cells and modules outdoors or indoors and is compliant with standardized ISOS-L and ISOS-O tests. The system provides control and flexibility over hardware and software algorithms for further user customization.
+The authors designed a hole-transfer material with a phosphonic acid group bonding to indium-tin oxide and a nitrogen atom in the aromatic carbazole group bonded with lead in the perovskite. A champion perovskite minimodule retained a power conversion efficiency of more than 16% after 29 weeks of outdoor testing.
