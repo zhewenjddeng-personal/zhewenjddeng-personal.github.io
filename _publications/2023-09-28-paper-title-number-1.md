@@ -1,17 +1,17 @@
 ---
-title: "PARASOL: an open-source platform for parallel testing of solar modules"
+title: "Ammonium cations with high pKa in perovskite solar cells for improved high-temperature photostability"
 header:
-  teaser: "TocRoundCorner.svg"  
-citation: 'Sean P. Dunfield*, <b>Zhewen J.D. Deng*</b>, Ken Kaushal, Deniz N. Cakan, Jack R. Palmer, Rishi E. Kumar, Clark Han, Colin Zyskowskic and David P. Fenning'
+  teaser: "PEAMA_TOC.png"  
+citation: 'Mengru Wang, Zhifang Shi, Chengbin Fei, <b>Zhewen J.D. Deng</b>, Guang Yang, Sean P. Dunfield, David P. Fenning & Jinsong Huang'
 collection: publications
 category: manuscripts
 permalink: /publication/2024-02-17-paper-title-number-4
-excerpt: 'PARASOL enables testing of photovoltaic cells and modules outdoors or indoors and is compliant with standardized ISOS-L and ISOS-O tests. The system provides control and flexibility over hardware and software algorithms for further user customization.'
+excerpt: 'Ammonium cations with a high acid dissociation constant (pKa), including PEAMA+ (pKa = 12.0) and BAMA+ (pKa = 12.0), can replace PEA+ or BA+ for passivation and are stable with FA-based perovskites due to their resistance to further deprotonation. P–i–n structure solar cells with PEAMA+ additive maintained over 90% of their initial efficiency after light soaking at open circuit and 90 °C for 1,500 hours.'
 date: 2025-07-10
-venue: 'RSC SE&F'
-paperurl: 'https://pubs.rsc.org/en/Content/ArticleLanding/2025/SE/D5SE00513B'
-codeurl: 'https://github.com/fenning-research-group/parasol.git'
-hardwareurl: '/publication/2024-02-17-paper-title-number-4'
+venue: 'Nature Energy'
+paperurl: 'https://www.nature.com/articles/s41560-023-01362-0'
+codeurl: ''
+hardwareurl: ''
 ---
 
-PARASOL enables testing of photovoltaic cells and modules outdoors or indoors and is compliant with standardized ISOS-L and ISOS-O tests. The system provides control and flexibility over hardware and software algorithms for further user customization.
+Ammonium cations with a high acid dissociation constant (pKa), including PEAMA+ (pKa = 12.0) and BAMA+ (pKa = 12.0), can replace PEA+ or BA+ for passivation and are stable with FA-based perovskites due to their resistance to further deprotonation. P–i–n structure solar cells with PEAMA+ additive maintained over 90% of their initial efficiency after light soaking at open circuit and 90 °C for 1,500 hours.
