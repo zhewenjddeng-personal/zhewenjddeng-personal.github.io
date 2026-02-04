@@ -39,7 +39,7 @@ The current iteration is built to test **7 Devices Under Test (DUTs)** simultane
   <em>Figure 2: The physical setup of the full system.</em>
 
 <p align="left">
-  <img src="/images/ISOSV3_Fig3.png" width="400">
+  <img src="/images/ISOSV3_Fig3.png" width="450">
   <br>
   <em>Figure 3: The circuit box for tracking 7 DUTs concurrently.</em>
 </p>
