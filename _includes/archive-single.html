@@ -51,14 +51,16 @@
           {% endif %}
 
           <span class="archive__item-links">
-            {% if post.paperurl %}<a href="{{ post.paperurl }}">PDF</a>{% endif %}
-            {% if post.codeurl %}&nbsp;|&nbsp;<a href="{{ post.codeurl }}">Code</a>{% endif %}
-            {% if post.hardwareurl %}&nbsp;|&nbsp;<a href="{{ post.hardwareurl }}">Hardware</a>{% endif %}
-            {% if post.slidesurl %}&nbsp;|&nbsp;<a href="{{ post.slidesurl }}">Slide</a>{% endif %}
-            {% if post.bibtexurl %}&nbsp;|&nbsp;<a href="{{ post.bibtexurl }}">Bib</a>{% endif %}
-            
-            {% if post.additional_note %}
-              <span style="color: #7a7a7a; margin-left: 10px;">{{ post.additional_note }}</span>
+            {% if post.paperurl %}
+              <a href="{{ post.paperurl }}">PDF</a>
+            {% endif %}
+          
+            {% if post.hardwareurl %}
+              {% if post.paperurl or post.codeurl %}&nbsp;|&nbsp;{% endif %}<a href="{{ post.hardwareurl }}">Hardware</a>
+            {% endif %}
+                      
+            {% if post.codeurl %}
+              {% if post.paperurl %}&nbsp;|&nbsp;{% endif %}<a href="{{ post.codeurl }}">Code</a>
             {% endif %}
           </span>
         </p>
