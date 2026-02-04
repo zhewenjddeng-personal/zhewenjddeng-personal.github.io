@@ -12,7 +12,7 @@ venue: 'Nature Energy'
 paperurl: 'https://www.nature.com/articles/s41560-023-01362-0'
 codeurl: ''
 hardwareurl: ''
-additional_note: "(Code&Hardware for Fig 1e, Electron Beam Induced Current. Python.)"
+additional_note: "(Python. Fig 1e&f, Electron Beam Induced Current.)"
 ---
 
 Ammonium cations with a high acid dissociation constant (pKa), including PEAMA+ (pKa = 12.0) and BAMA+ (pKa = 12.0), can replace PEA+ or BA+ for passivation and are stable with FA-based perovskites due to their resistance to further deprotonation. P–i–n structure solar cells with PEAMA+ additive maintained over 90% of their initial efficiency after light soaking at open circuit and 90 °C for 1,500 hours.
