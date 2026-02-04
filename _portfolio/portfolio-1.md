@@ -1,7 +1,7 @@
 ---
 title: "Reverse Leakage Current Tracking System"
 excerpt: "A low-cost, high-capacity leakage current tracking system for solar cell degradation testing under ISOS-V3 conditions."
-author: "Zhewen J.D. Deng, Emily Munch, Thomas M. Brenner, Sean P. Dunfield, David P. Fenning"
+citation: "Zhewen J.D. Deng, Emily Munch, Thomas M. Brenner, Sean P. Dunfield, David P. Fenning (2025)"
 collection: portfolio
 header:
   teaser: "ISOSV3_Fig1.png" # Thumbnail for the portfolio list
