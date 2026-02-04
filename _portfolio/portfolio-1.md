@@ -17,6 +17,7 @@ Off-of-the-shelf choices require expensive 4-quadrant source measuring units (SM
 * **Low-cost power supplies:** ~$70 per module.
 * **Current tracking modules:** ~$25 per module.
 
+Additional cost includes a control PC, a data aquisition tool, and miscellaneous parts if needed.
 This setup brings the cost down significantly, allowing for expansion of testing capacity for research labs and manufacturers.
 
 ---
@@ -24,8 +25,11 @@ This setup brings the cost down significantly, allowing for expansion of testing
 ## Hardware & Capacity
 The current iteration is built to test **7 Devices Under Test (DUTs)** simultaneously.The modular design allows users to add additional low-cost testing slots as needed at **<$100/device**.
 
-![Hardware Setup](/images/leakage-hardware.png)
-*Figure 1: The modular hardware setup for the tracking system.*
+![Hardware Setup](ISOSV3_Fig1.png)
+*Figure 1: The schematic of the wiring of the system for 1 DUT.*
+
+![Hardware Setup](ISOSV3_Fig2.png)
+*Figure 2: The physical setup of the full system.*
 
 ## Software Interface
 The system includes a custom **Graphical User Interface (GUI)** that provides:
