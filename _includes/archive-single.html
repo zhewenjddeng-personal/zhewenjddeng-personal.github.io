@@ -52,13 +52,13 @@
 
           <span class="archive__item-links">
             {% if post.paperurl %}<a href="{{ post.paperurl }}">PDF</a>{% endif %}
-            {% if post.codeurl %} | <a href="{{ post.codeurl }}">Code</a>{% endif %}
-            {% if post.hardwareurl %} | <a href="{{ post.hardwareurl }}">Hardware</a>{% endif %}
-            {% if post.slidesurl %} | <a href="{{ post.slidesurl }}">Slide</a>{% endif %}
-            {% if post.bibtexurl %} | <a href="{{ post.bibtexurl }}">Bib</a>{% endif %}
+            {% if post.codeurl %}&nbsp;|&nbsp;<a href="{{ post.codeurl }}">Code</a>{% endif %}
+            {% if post.hardwareurl %}&nbsp;|&nbsp;<a href="{{ post.hardwareurl }}">Hardware</a>{% endif %}
+            {% if post.slidesurl %}&nbsp;|&nbsp;<a href="{{ post.slidesurl }}">Slide</a>{% endif %}
+            {% if post.bibtexurl %}&nbsp;|&nbsp;<a href="{{ post.bibtexurl }}">Bib</a>{% endif %}
             
             {% if post.additional_note %}
-              <span style="color: #7a7a7a; margin-left: 5px;">{{ post.additional_note }}</span>
+              <span style="color: #7a7a7a; margin-left: 10px;">{{ post.additional_note }}</span>
             {% endif %}
           </span>
         </p>
