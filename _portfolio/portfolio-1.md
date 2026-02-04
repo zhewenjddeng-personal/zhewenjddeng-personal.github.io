@@ -11,7 +11,7 @@ header:
 The **ISOS-V3 Reverse Leakage Current Tracker** is designed to monitor the leakage current of solar cells or modules under stress conditions of: 
 * **Environment:** 85% Relative Humidity (RH) and 85°C.
 * **Conditions:** Dark environment with negative open-circuit voltage (-Voc) bias.
-
+Users have the ability to vary the stress conditions as permitted by the testing equipments. 
 ### Cost-Effective Scaling
 Off-of-the-shelf choices require expensive 4-quadrant source measuring units (SMUs) costing around **$6,000 per module**. (Can vary based on the supplier.) This system replaces that requirement with:
 * **Low-cost power supplies:** ~$70 per module.
