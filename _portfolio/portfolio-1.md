@@ -25,14 +25,14 @@ This setup brings the cost down significantly, allowing for expansion of testing
 ## Hardware & Capacity
 The current iteration is built to test **7 Devices Under Test (DUTs)** simultaneously. The modular design allows users to add additional low-cost testing slots as needed at **<$100/device**.
 
-<p align="center">
-  <img src="/images/ISOSV3_Fig1.png" width="600">
+<p align="left">
+  <img src="/images/ISOSV3_Fig1.png" width="400">
   <br>
   <em>Figure 1: The schematic of the wiring of the system for 1 DUT.</em>
 </p>
 
-<p align="center">
-  <img src="/images/ISOSV3_Fig2.png" width="600">
+<p align="left">
+  <img src="/images/ISOSV3_Fig2.png" width="400">
   <br>
   <em>Figure 2: The physical setup of the full system.</em>
 </p>
