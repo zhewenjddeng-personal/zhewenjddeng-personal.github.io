@@ -30,7 +30,7 @@
     <div class="archive__item-content" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
       
       <h2 class="archive__item-title" itemprop="headline" style="margin-top: 0; margin-bottom: 0.25em;">
-        {% if post.collection == 'publications' %}
+        {% if post.collection == 'publications' or post.collection == 'portfolio' %}
           {{ title }}
         {% else %}
           <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
