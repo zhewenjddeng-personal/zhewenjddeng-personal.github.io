@@ -5,6 +5,8 @@ citation: "Zhewen J.D. Deng, Emily Munch, Thomas M. Brenner, Sean P. Dunfield, D
 collection: portfolio
 header:
   teaser: "ISOSV3_Fig1.png" # Thumbnail for the portfolio list
+hardwareurl: 'https://zhewenjddeng-personal.github.io/portfolio/portfolio-1/'
+codeurl: ''
 ---
 
 ## Project Overview
