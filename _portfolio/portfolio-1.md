@@ -11,7 +11,7 @@ codeurl: ''
 
 ## Project Overview
 
-The **ISOS-V3 Reverse Leakage Current Tracker** is designed to monitor the leakage current of solar cells or modules under stress conditions of: 
+The **ISOS-V3 Reverse Leakage Current Tracker** is designed to monitor the leakage current of solar cells or modules in the µA range under stress conditions of: 
 * **Environment:** 85% Relative Humidity (RH) and 85°C.
 * **Conditions:** Dark environment with negative open-circuit voltage (-Voc) bias.
 
