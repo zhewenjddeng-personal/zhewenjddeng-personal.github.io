@@ -4,7 +4,7 @@ excerpt: "This system generates spatially resolved images of series resistance (
 citation: "Zhewen J.D. Deng, Rishi E. Kumar, David P. Fenning (2024)"
 collection: portfolio
 header:
-  teaser: "" 
+  teaser: "SiPLIV_Fig1.png" 
 hardwareurl: ''
 codeurl: ''
 additional_note: "(Python)"
