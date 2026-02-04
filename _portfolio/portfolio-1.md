@@ -3,7 +3,7 @@ title: "Reverse Leakage Current Tracking System"
 excerpt: "A low-cost, high-capacity leakage current tracking system for solar cell degradation testing under ISOS-V3 conditions."
 collection: portfolio
 header:
-  teaser: "/images/ISOSV3_Fig1.png" # Thumbnail for the portfolio list
+  teaser: "/ISOSV3_Fig1.png" # Thumbnail for the portfolio list
 ---
 
 ## Project Overview
