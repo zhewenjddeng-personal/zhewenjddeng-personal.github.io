@@ -12,11 +12,9 @@ additional_note: "(Python)"
 
 ## Project Overview
 
-The **ISOS-V3 Reverse Leakage Current Tracker** is designed to monitor the leakage current of solar cells or modules in the µA range under stress conditions of: 
+The **ISOS-V3 Reverse Leakage Current Tracker** is designed to study the impact of various device stack components on the longer term durability of the perovskite modules. The system monitors the leakage current of solar cells or modules in the µA range under user-defined stress conditions. In this project, the stress conditions are: 
 * **Environment:** 85% Relative Humidity (RH) and 85°C.
 * **Conditions:** Dark environment with negative open-circuit voltage (-Voc) bias.
-
-Users have the ability to vary the stress conditions as permitted by the limits of the testing equipments. 
 
 ### Cost-Effective Scaling
 Off-of-the-shelf choices require expensive 4-quadrant source measuring units (SMUs) costing around **$6,000 per module**. (Can vary based on the supplier.) This system replaces that requirement with:
