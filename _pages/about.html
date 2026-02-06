@@ -15,18 +15,18 @@ My research is on advanced photovoltaics luminescence imaging and instrumentatio
 
 **I am currently seeking Full-Time R&D, Process, Product or Automation/Instrumentation Engineering roles starting Summer 2026. I am also open to advanced internships.**
 
-Publications
-======
+<hr class="page__hr"/>
 
+<h1 class="page__title">Publications <a href="publications">[More]</a></h1>
 
-Projects
-======
+{% for post in site.publications reversed %}
+{% include archive-single.html %}
+{% endfor %}
 
+<hr class="page__hr"/>
 
-Talks
-======
+<h1 class="page__title">Projects <a href="projects">[More]</a></h1>
 
-
-Teaching
-======
-
+{% for post in site.projects reversed %}
+{% include archive-single.html %}
+{% endfor %}
