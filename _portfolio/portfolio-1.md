@@ -27,7 +27,7 @@ This setup brings the cost down significantly, allowing for expansion of testing
 ---
 
 ## Hardware & Capacity
-The current iteration is built to test **7 Devices Under Test (DUTs)** simultaneously. The modular design allows users to add additional low-cost testing slots as needed at **<$100/device**.
+The current iteration is built to test **10 Devices Under Test (DUTs)** simultaneously. The modular design allows users to add additional low-cost testing slots as needed at **<$100/device**.
 
 <p align="left">
   <img src="/images/ISOSV3_Fig1.png" width="400">
@@ -43,14 +43,18 @@ The current iteration is built to test **7 Devices Under Test (DUTs)** simultane
 <p align="left">
   <img src="/images/ISOSV3_Fig3.png" width="450">
   <br>
-  <em>Figure 3: The circuit box for tracking 7 DUTs concurrently.</em>
+  <em>Figure 3: The circuit box for tracking 10 DUTs concurrently. There are 7 boards mounted in the current figure. </em>
 </p>
 
 ## Software Interface
 The system includes a custom **Graphical User Interface (GUI)** that provides:
-* Individual ON/OFF control for each testing slot.
-* Real-time display of tracked leakage current.
-* Data logging for long-term stability analysis.
+* **Individual ON/OFF control for each testing slot.
+* **Real-time display of tracked leakage current.
+* **Data logging for long-term stability analysis.
 
-![GUI Screenshot](/images/leakage-gui.png)
-*Figure 2: The custom GUI used for real-time monitoring and control.*
+<p align="left">
+  <img src="/images/ISOSV3_Fig4.png" width="450">
+  <br>
+  <em>Figure 4: The custom GUI used for real-time monitoring and control. Full code base see code. </em>
+</p>
+
