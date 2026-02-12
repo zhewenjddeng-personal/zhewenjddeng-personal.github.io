@@ -56,7 +56,7 @@ The system includes a custom **Graphical User Interface (GUI)** that provides:
 * **Data logging for long-term stability analysis.**
 
 <p align="center">
-  <img src="/images/ISOSV3_Fig4.png" width="800">
+  <img src="/images/ISOSV3_Fig4.png" width="1020">
   <br>
   <em>Figure 4: The custom GUI used for real-time monitoring and control. Full code base see code. </em>
 </p>
