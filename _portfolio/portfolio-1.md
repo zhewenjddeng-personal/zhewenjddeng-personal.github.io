@@ -46,15 +46,16 @@ The current iteration is built to test **10 Devices Under Test (DUTs)** simultan
   <em>Figure 3: The circuit box for tracking 10 DUTs concurrently. There are 7 boards mounted in the current figure. </em>
 </p>
 
+---
+
 ## Software Interface
 
 The system includes a custom **Graphical User Interface (GUI)** that provides:
-* **Individual ON/OFF control for each testing slot.
 * **Real-time display of tracked leakage current.
 * **Data logging for long-term stability analysis.
 
 <p align="center">
-  <img src="/images/ISOSV3_Fig4.png" width="600">
+  <img src="/images/ISOSV3_Fig4.png" width="800">
   <br>
   <em>Figure 4: The custom GUI used for real-time monitoring and control. Full code base see code. </em>
 </p>
