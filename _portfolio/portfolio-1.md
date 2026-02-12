@@ -58,6 +58,6 @@ The system includes a custom **Graphical User Interface (GUI)** that provides:
 <p align="center">
   <img src="/images/ISOSV3_Fig4.png" width="1080">
   <br>
-  <em>Figure 4: The custom GUI used for real-time monitoring and control. Full code base see code. </em>
+  <em>Figure 4: The custom GUI used for real-time monitoring and control. No device is currently connected in the shown image, thus the valus show up as a straight line at 0 A. Full code base see code. </em>
 </p>
 
