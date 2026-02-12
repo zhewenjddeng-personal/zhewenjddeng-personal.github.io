@@ -47,13 +47,14 @@ The current iteration is built to test **10 Devices Under Test (DUTs)** simultan
 </p>
 
 ## Software Interface
+
 The system includes a custom **Graphical User Interface (GUI)** that provides:
 * **Individual ON/OFF control for each testing slot.
 * **Real-time display of tracked leakage current.
 * **Data logging for long-term stability analysis.
 
-<p align="left">
-  <img src="/images/ISOSV3_Fig4.png" width="450">
+<p align="center">
+  <img src="/images/ISOSV3_Fig4.png" width="600">
   <br>
   <em>Figure 4: The custom GUI used for real-time monitoring and control. Full code base see code. </em>
 </p>
