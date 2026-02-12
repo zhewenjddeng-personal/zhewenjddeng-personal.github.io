@@ -39,6 +39,7 @@ The current iteration is built to test **10 Devices Under Test (DUTs)** simultan
   <img src="/images/ISOSV3_Fig2.png" width="400">
   <br>
   <em>Figure 2: The physical setup of the full system.</em>
+</p>
 
 <p align="left">
   <img src="/images/ISOSV3_Fig3.png" width="450">
@@ -51,8 +52,8 @@ The current iteration is built to test **10 Devices Under Test (DUTs)** simultan
 ## Software Interface
 
 The system includes a custom **Graphical User Interface (GUI)** that provides:
-* **Real-time display of tracked leakage current.
-* **Data logging for long-term stability analysis.
+* **Real-time display of tracked leakage current.**
+* **Data logging for long-term stability analysis.**
 
 <p align="center">
   <img src="/images/ISOSV3_Fig4.png" width="800">
