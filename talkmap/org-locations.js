@@ -1,6 +1,6 @@
 var addressPoints = [
   [
-    "[Spatially resolved electronic parameters on perovskite modules using luminescence imaging](https://ieeexplore.ieee.org/abstract/document/11132827)<br />palais des congr\u00e8s de montr\u00e9al montreal's convention center; Montreal, ON, Canada",
+    "Spatially resolved electronic parameters on perovskite modules using luminescence imaging<br />palais des congr\u00e8s de montr\u00e9al montreal's convention center; Montreal, ON, Canada",
     45.451066,
     -75.5838611
   ],
