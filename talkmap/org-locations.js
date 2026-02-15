@@ -5,9 +5,9 @@ var addressPoints = [
     -0.1277653
   ],
   [
-    "Loss Analysis of Halide Perovskite Solar Modules using Biased Photoluminescence<br />UC San Francisco, Department of Testing; San Francisco, CA, USA",
-    37.7879363,
-    -122.4075201
+    "Loss Analysis of Halide Perovskite Solar Modules using Biased Photoluminescence<br />Anaheim Convention Center; Anaheim, CA, USA",
+    33.8347516,
+    -117.911732
   ],
   [
     "Tutorial 1 on Relevant Topic in Your Field<br />UC-Berkeley Institute for Testing Science; Berkeley, CA, USA",
