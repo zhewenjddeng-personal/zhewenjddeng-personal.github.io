@@ -6,7 +6,7 @@ collection: portfolio
 header:
   teaser: "SiPLIV_Fig1.png" 
 hardwareurl: ''
-codeurl: ''
+codeurl: 'https://github.com/fenning-research-group/Instruments/tree/master/FRG%20Hardware/frghardware/pliv/frghardware/pliv'
 additional_note: "(Python)"
 ---
 
