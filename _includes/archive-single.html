@@ -33,14 +33,15 @@
         {% if post.collection == 'publications' or post.collection == 'portfolio' %}
           {{ title }}
         {% else %}
-          {% if post.url contains 'http' %}
+          {% if post.link %}
+            <a href="{{ post.link }}">{{ title }}</a>
+          {% elsif post.url contains 'http' %}
             <a href="{{ post.url }}">{{ title }}</a>
           {% else %}
             <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
           {% endif %}
         {% endif %}
       </h2>
-
 
       <div style="font-size: 0.85em;">
         
