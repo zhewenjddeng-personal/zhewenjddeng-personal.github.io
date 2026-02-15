@@ -5,7 +5,7 @@ var addressPoints = [
     -75.5838611
   ],
   [
-    "[Loss Analysis of Halide Perovskite Solar Modules using Biased Photoluminescence](https://archive.aps.org/smt/2025/mar-s41/4/)<br />Anaheim Convention Center; Anaheim, CA, USA",
+    "Loss Analysis of Halide Perovskite Solar Modules using Biased Photoluminescence<br />Anaheim Convention Center; Anaheim, CA, USA",
     33.8347516,
     -117.911732
   ]
