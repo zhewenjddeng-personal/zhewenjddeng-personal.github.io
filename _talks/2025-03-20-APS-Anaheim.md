@@ -1,5 +1,6 @@
 ---
-title: "[Loss Analysis of Halide Perovskite Solar Modules using Biased Photoluminescence](https://archive.aps.org/smt/2025/mar-s41/4/)"
+title: "Loss Analysis of Halide Perovskite Solar Modules using Biased Photoluminescence"
+url: "https://archive.aps.org/smt/2025/mar-s41/4/"
 collection: talks
 type: "Talk"
 permalink: /talks/2025-03-20-APS-Anaheim
